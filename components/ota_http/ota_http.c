@@ -67,6 +67,8 @@ static esp_err_t download_and_flash(void)
         .crt_bundle_attach     = esp_crt_bundle_attach,
         .max_redirection_count = 5,
         .keep_alive_enable     = true,
+        .buffer_size           = 4096,
+        .buffer_size_tx        = 2048,
     };
     esp_https_ota_config_t ota_cfg = {
         .http_config = &http_cfg,

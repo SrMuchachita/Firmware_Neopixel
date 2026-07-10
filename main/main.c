@@ -18,7 +18,7 @@
 /* ── OTA ── edita aqui ──────────────────────────────────────────────────── */
 #define OTA_VERSION_URL  "https://raw.githubusercontent.com/SrMuchachita/Firmware_Neopixel/main/version.json"
 #define OTA_FIRMWARE_URL "https://github.com/SrMuchachita/Firmware_Neopixel/releases/latest/download/firmware.bin"
-#define OTA_CHECK        60          /* segundos entre chequeos */
+#define OTA_CHECK        20          /* segundos entre chequeos */
 
 /* ── LED ────────────────────────────────────────────────────────────────── */
 #define PIN_LED_DATA   GPIO_NUM_48
@@ -43,8 +43,8 @@
 #define COLOR_APAGADO   {  0,   0,   0}
 
 //#define COLOR_SELECCIONADO   COLOR_ROJO
- #define COLOR_SELECCIONADO   COLOR_VERDE
-// #define COLOR_SELECCIONADO   COLOR_AZUL
+// #define COLOR_SELECCIONADO   COLOR_VERDE
+ #define COLOR_SELECCIONADO   COLOR_AZUL
 // #define COLOR_SELECCIONADO   COLOR_AMARILLO
 // #define COLOR_SELECCIONADO   COLOR_MAGENTA
 // #define COLOR_SELECCIONADO   COLOR_CYAN
